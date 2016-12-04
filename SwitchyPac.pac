@@ -3,12 +3,21 @@ function regExpMatch(url, pattern) {    try { return new RegExp(pattern).test(ur
 	if (shExpMatch(url, "*://bangumi.bilibili.com/*")) return 'SOCKS 222.92.30.22:1080';
 	if (shExpMatch(url, "*://www.bilibili.com/*")) return 'SOCKS 222.92.30.22:1080';
 	if (shExpMatch(url, "*://app.bilibili.com/*")) return 'SOCKS 222.92.30.22:1080';
+<<<<<<< HEAD
 	if (shExpMatch(url, "*://interface.bilibili.com/*")) return 'DIRECT';
 	if (shExpMatch(url, "*://music.163.com/*")) return 'SOCKS 222.92.30.22:1080';
 	if (shExpMatch(url, "*://*.soku.com/*") || shExpMatch(url, "*://soku.com/*")) return 'SOCKS 222.92.30.22:1080';
 	if (shExpMatch(url, "*://*.xunlei.com/*") || shExpMatch(url, "*://xunlei.com/*")) return 'SOCKS 222.92.30.22:1080';
 	if (shExpMatch(url, "*://play-ali.youku.com/*")) return 'SOCKS 222.92.30.22:1080';
 	if (shExpMatch(url, "*://v.youku.com/*")) return 'SOCKS 222.92.30.22:1080';
+=======
+	if (shExpMatch(url, "*://interface.bilibili.com/*")) return 'SOCKS 222.92.30.22:1080';
+	if (shExpMatch(url, "*://music.163.com/*")) return 'SOCKS 222.92.30.22:1080';
+	if (shExpMatch(url, "*://*.soku.com/*") || shExpMatch(url, "*://soku.com/*")) return 'SOCKS 222.92.30.22:1080';
+	if (shExpMatch(url, "*://*.xunlei.com/*") || shExpMatch(url, "*://xunlei.com/*")) return 'SOCKS 222.92.30.22:1080';
+	if (shExpMatch(url, "*://play-ali.youku.com/*") return 'SOCKS 222.92.30.22:1080';
+	if (shExpMatch(url, "*://v.youku.com/*") return 'SOCKS 222.92.30.22:1080';
+>>>>>>> origin/master
 	if (shExpMatch(url, "*://*.3g.youku.com/*") || shExpMatch(url, "*://3g.youku.com/*")) return 'SOCKS 222.92.30.22:1080';
 	return 'DIRECT';
 }
