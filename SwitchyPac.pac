@@ -1,6 +1,5 @@
 function regExpMatch(url, pattern) {    try { return new RegExp(pattern).test(url); } catch(ex) { return false; }    }
     function FindProxyForURL(url, host) {
-	if (host == "data.bilibili.com") return 'SOCKS 222.177.143.229:1080';
 	if (shExpMatch(url, "*://bangumi.bilibili.com/*")) return 'SOCKS 222.177.143.229:1080';
 	if (shExpMatch(url, "*://www.bilibili.com/*")) return 'SOCKS 222.177.143.229:1080';
 	if (shExpMatch(url, "*://interface.bilibili.com/*")) return 'DIRECT';
